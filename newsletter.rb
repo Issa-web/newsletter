@@ -50,15 +50,23 @@ def print_one_article(article)
   # Write a method that will take an article hash
   # and print the title, author and text as a formatted string
   # See the README/sample output for examples
- article[:title]
- "by : #{article[:author]}"
- article[:text]
-  
+    puts article[:title]
+    puts "by : #{article[:author]}"
+    puts article[:text]
+     
+
 end
+# binding.pry
 
 def print_many_articles(articles)
   # Write a method that will take in an array of article hashes
   # and format each one using the print_one_article method
+    articles.each do |article|
+      print_one_article(article)
+    # binding.pry
+  end
+   
+  
 end
 
 def format_campus_location(campus)
@@ -102,4 +110,5 @@ end
 # When we run "ruby newsletter.rb" in the command line,
 # the 'run' method will be called because we're calling it below.
 run
-
+# print print_many_articles(ARTICLES)
+# p print_one_article(ARTICLES[0])
