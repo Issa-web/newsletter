@@ -42,7 +42,7 @@ def print_recipients
   # and returns a list of emails separated by commas
   # Ex) "abc@email.com, def@email.com, ghi@email.com"
 
-   calculate_recipients.join(", ")
+  puts calculate_recipients.join(", ")
 end
 
 # binding.pry
