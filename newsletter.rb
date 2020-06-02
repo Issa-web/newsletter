@@ -29,7 +29,8 @@ ARTICLES = [
 
 def calculate_recipients
   recipients = SUBSCRIBERS - UNSUBSCRIBED
-   recipients 
+  recipients
+ 
 end
 
 def first_n_articles(number_of_articles)
@@ -40,8 +41,11 @@ def print_recipients
   # Write a method that uses the output of calculate_recipients
   # and returns a list of emails separated by commas
   # Ex) "abc@email.com, def@email.com, ghi@email.com"
+
+   calculate_recipients.join(", ")
 end
 
+# binding.pry
 def print_one_article(article)
   # Write a method that will take an article hash
   # and print the title, author and text as a formatted string
