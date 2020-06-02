@@ -50,6 +50,10 @@ def print_one_article(article)
   # Write a method that will take an article hash
   # and print the title, author and text as a formatted string
   # See the README/sample output for examples
+ article[:title]
+ "by : #{article[:author]}"
+ article[:text]
+  
 end
 
 def print_many_articles(articles)
